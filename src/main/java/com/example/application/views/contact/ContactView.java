@@ -1,34 +1,48 @@
 package com.example.application.views.contact;
 
 import com.example.application.views.MainLayout;
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.H2;
-import com.vaadin.flow.component.html.Image;
-import com.vaadin.flow.component.html.Paragraph;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.textfield.TextArea;
+import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.theme.lumo.LumoUtility.Margin;
 
 @PageTitle("Contact")
 @Route(value = "contact", layout = MainLayout.class)
 public class ContactView extends VerticalLayout {
 
-    public ContactView() {
-        setSpacing(false);
+	public ContactView() {
+		setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
-        img.setWidth("200px");
-        add(img);
+		H2 contact = new H2("Contact Me");
+		contact.getStyle().set("margin", "0");
+		contact.getStyle().set("font-size", "50px");
+		contact.getStyle().set("color", "var(--lumo-success-color)");
 
-        H2 header = new H2("This place intentionally left empty");
-        header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
-        add(header);
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+		TextField firstName = new TextField("First Name");
+		firstName.getStyle().set("width", "100%");
+		TextField lastName = new TextField("Last Name");
+		lastName.getStyle().set("width", "100%");
+		TextField email = new TextField("Email");
+		email.getStyle().set("width", "100%");
+		TextField subject = new TextField("Subject");
+		subject.getStyle().set("width", "100%");
+		TextArea messageArea = new TextArea("Message");
+		messageArea.getStyle().set("width", "100%");
+		messageArea.getStyle().set("height", "400px");
+		Button submit = new Button("Submit");
 
-        setSizeFull();
-        setJustifyContentMode(JustifyContentMode.CENTER);
-        setDefaultHorizontalComponentAlignment(Alignment.CENTER);
-        getStyle().set("text-align", "center");
-    }
+		HorizontalLayout contactName = new HorizontalLayout(firstName, lastName);
+		contactName.getStyle().set("width", "100%");
+		add(contact, contactName, email, messageArea, submit);
+
+		setSizeFull();
+		setJustifyContentMode(JustifyContentMode.CENTER);
+		setDefaultHorizontalComponentAlignment(Alignment.CENTER);
+		getStyle().set("text-align", "center");
+	}
 
 }
