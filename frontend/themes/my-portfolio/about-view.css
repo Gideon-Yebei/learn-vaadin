@@ -1,0 +1,79 @@
+.about-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-view .intro {
+    font-size: 1rem;
+    color: var(--lumo-success-text-color);
+}
+
+.about-view .header {
+    color: var(--light-blue-color);
+}
+
+.about-image {
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,
+    transparent,
+    var(--color-primary),
+    transparent);
+    display: grid;
+    place-items: center;
+    margin-block: 3rem;
+}
+
+.about-view .about-logo {
+    background: linear-gradient(45deg,
+    transparent,
+    var(--color-primary),
+    transparent);
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: 500ms;
+}
+
+.about-view .about-logo:hover {
+    transform: rotate(0deg);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background: var(--color-bg-variant);
+    margin-top: 1rem;
+    padding: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    color: var(--color-light);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 785px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}

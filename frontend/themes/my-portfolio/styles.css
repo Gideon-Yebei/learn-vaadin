@@ -1,5 +1,6 @@
 @import url('./main-layout.css');
-@import url('@fontsource/aclonica/index.css');
+@import url('about-view.css');
+@import url('home-view.css');
 
 html {
     --lumo-font-family: Aclonica;
@@ -34,4 +35,10 @@ html {
     --blue-border-color: 2px solid #4DB5F4;
     --light-blue-color: hsl(197, 67%, 58%);
     --image-background-gradient: linear-gradient(45deg, #0000, #4DB5F4, #0000);
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: #4db5ff66;
+    --color-white: #fff;
+    --color-light: #fff9;
 }

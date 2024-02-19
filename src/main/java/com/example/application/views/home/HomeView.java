@@ -2,6 +2,7 @@ package com.example.application.views.home;
 
 import com.example.application.views.MainLayout;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.html.Image;
@@ -22,9 +23,11 @@ public class HomeView extends VerticalLayout {
 		H3 hello = new H3("Hello, I'm");
 		hello.getStyle().set("margin", "0");
 		hello.getStyle().set("font-size", "20px");
+
 		H2 name = new H2("Gideon");
 		name.getStyle().set("margin", "0");
 		name.getStyle().set("font-size", "50px");
+
 		H3 title = new H3("Software Developer");
 		title.addClassName("title");
 		title.getStyle().set("margin", "0");
@@ -32,11 +35,10 @@ public class HomeView extends VerticalLayout {
 		title.getStyle().set("style", "font-weight: 100");
 		title.getStyle().set("color", "var(--lumo-success-color)");
 
-		Image image = new Image("images/logo.png", "Gideon");
-		image.getStyle().set("border-radius", "50% 50% 0 0");
-		image.getStyle().set("margin-top", "20px");
-		image.getStyle().set("margin-bottom", "20px");
-		image.getStyle().set("background", "var(--image-background-gradient)");
+		Image homeLogo = new Image("images/logo.png", "Gideon");
+		homeLogo.addClassName("home-logo");
+		Div homeImage = new Div(homeLogo);
+		homeImage.addClassName("home-image");
 
 		Button DownloadCV = new Button("Download CV");
 		DownloadCV.getStyle().set("margin-top", "20px");
@@ -66,8 +68,9 @@ public class HomeView extends VerticalLayout {
 
 		HorizontalLayout hButtons = new HorizontalLayout(DownloadCV, ContactMe);
 
-		add(hello, name, title, hButtons, image);
+		add(hello, name, title, hButtons, homeImage);
 
+		addClassName("home-view");
 		setSizeFull();
 		setJustifyContentMode(JustifyContentMode.CENTER);
 		setDefaultHorizontalComponentAlignment(Alignment.CENTER);
