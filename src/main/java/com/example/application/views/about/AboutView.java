@@ -36,6 +36,9 @@ public class AboutView extends VerticalLayout {
 
 		Button letsConnect = new Button("Let's Connect");
 		letsConnect.addClassName("connect");
+		letsConnect.addClickListener(e -> {
+			letsConnect.getUI().ifPresent(ui -> ui.navigate("contact"));
+		});
 
 		add(intro, aboutHeader, aboutImage, cards, letsConnect);
 
