@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/zeroc/IdeaProjects/learn-vaadin/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/zeroc/IdeaProjects/learn-vaadin/./frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/zeroc/IdeaProjects/learn-vaadin/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\zeroc\\IdeaProjects\\learn-vaadin\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\zeroc\\IdeaProjects\\learn-vaadin\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/zeroc/IdeaProjects/learn-vaadin/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/zeroc/IdeaProjects/learn-vaadin/target/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/zeroc/IdeaProjects/learn-vaadin/./frontend/generated/jar-resources",
+  "themeName": "my-portfolio",
+  "clientServiceWorkerSource": "C:\\Users\\zeroc\\IdeaProjects\\learn-vaadin\\target\\sw.ts",
+  "pwaEnabled": true,
+  "offlineEnabled": true,
+  "offlinePath": "'.'"
+}
