@@ -1,9 +1,0 @@
-com\example\application\views\skills\SkillsView.class
-com\example\application\views\services\ServicesView.class
-com\example\application\views\MainLayout.class
-com\example\application\Application.class
-com\example\application\views\blog\BlogView.class
-com\example\application\views\portfolio\PortfolioView.class
-com\example\application\views\contact\ContactView.class
-com\example\application\views\about\AboutView.class
-com\example\application\views\home\HomeView.class
