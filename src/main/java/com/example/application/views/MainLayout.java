@@ -49,8 +49,12 @@ public class MainLayout extends AppLayout {
 		appName.getStyle().set("text-align", "center");
 		appName.addClassNames(LumoUtility.FontSize.LARGE, LumoUtility.Margin.NONE);
 		Header header = new Header(appName);
+		//<theme-editor-local-classname>
+		header.addClassName("main-layout-header-1");
 
 		Scroller scroller = new Scroller(createNavigation());
+		//<theme-editor-local-classname>
+		scroller.addClassName("main-layout-scroller-1");
 
 		addToDrawer(header, scroller, createFooter());
 	}

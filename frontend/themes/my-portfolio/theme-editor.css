@@ -1,0 +1,50 @@
+/*
+ * This file has been created by the Vaadin Theme Editor. Please note that
+ * manual changes to individual CSS properties may be overwritten by the theme editor.
+ */
+header.main-layout-header-1 {
+    background-color: #1f1f38;
+}
+
+vaadin-app-layout {
+    background: linear-gradient(45deg, darkred, yellowgreen, blueviolet);
+}
+
+vaadin-app-layout.main-layout-header-1 {
+}
+
+vaadin-app-layout.main-layout-header-1::part(drawer) {
+}
+
+vaadin-app-layout.main-layout-header-1::part(navbar) {
+}
+
+vaadin-button {
+    border-color: var(--lumo-space-l);
+    background-color: var(--lumo-space-l);
+    color: var(--lumo-space-l);
+}
+
+vaadin-button:hover {
+    background-color: darkred;
+}
+
+vaadin-button.contact-view-button-1 {
+}
+
+vaadin-scroller {
+}
+
+vaadin-scroller.main-layout-scroller-1 {
+    background-color: #1f1f38;
+}
+
+vaadin-side-nav-item > [slot="prefix"] {
+}
+
+vaadin-vertical-layout {
+}
+
+vaadin-vertical-layout.about-view-vertical-layout-1 {
+    background-color: #1f1f38;
+}

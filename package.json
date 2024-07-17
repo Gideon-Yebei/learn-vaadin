@@ -5,6 +5,8 @@
   "dependencies": {
     "@fontsource/aclonica": "4.5.0",
     "@polymer/polymer": "3.5.1",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
     "@vaadin/a11y-base": "24.3.6",
     "@vaadin/accordion": "24.3.6",
     "@vaadin/app-layout": "24.3.6",
@@ -78,7 +80,10 @@
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.29.3",
     "lit": "3.1.2",
-    "proj4": "2.9.2"
+    "proj4": "2.9.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.18.0"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "5.0.5",
@@ -102,6 +107,8 @@
     "dependencies": {
       "@fontsource/aclonica": "4.5.0",
       "@polymer/polymer": "3.5.1",
+      "@types/react": "18.2.37",
+      "@types/react-dom": "18.2.15",
       "@vaadin/a11y-base": "24.3.6",
       "@vaadin/accordion": "24.3.6",
       "@vaadin/app-layout": "24.3.6",
@@ -175,7 +182,10 @@
       "construct-style-sheets-polyfill": "3.1.0",
       "date-fns": "2.29.3",
       "lit": "3.1.2",
-      "proj4": "2.9.2"
+      "proj4": "2.9.2",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-router-dom": "6.18.0"
     },
     "devDependencies": {
       "@rollup/plugin-replace": "5.0.5",
@@ -195,7 +205,7 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "94cf7899091be278926e7cba7f49d9c0acfeb16a8c688d17db048be5e919d778"
+    "hash": "62220fd91cb6c404569357e86a8ef74eec31e39b86f17959e2669c6b7e5e5651"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -273,6 +283,11 @@
     "proj4": "$proj4",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "date-fns": "$date-fns",
-    "@fontsource/aclonica": "$@fontsource/aclonica"
+    "@fontsource/aclonica": "$@fontsource/aclonica",
+    "react-dom": "$react-dom",
+    "@types/react-dom": "$@types/react-dom",
+    "react-router-dom": "$react-router-dom",
+    "@types/react": "$@types/react",
+    "react": "$react"
   }
 }

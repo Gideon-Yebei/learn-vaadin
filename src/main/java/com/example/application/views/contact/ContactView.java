@@ -34,6 +34,8 @@ public class ContactView extends VerticalLayout {
 		messageArea.getStyle().set("width", "100%");
 		messageArea.getStyle().set("height", "400px");
 		Button submit = new Button("Submit");
+		//<theme-editor-local-classname>
+		submit.addClassName("contact-view-button-1");
 
 		HorizontalLayout contactName = new HorizontalLayout(firstName, lastName);
 		contactName.getStyle().set("width", "100%");
